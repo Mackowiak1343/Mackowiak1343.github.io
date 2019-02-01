@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad-Lib</title>
+    <link rel="stylesheet" href="libz.css">
+    <script type="text/javascript">
+
+        function tellStory()
+        {
+            var words = [];
+            words.push(document.story.place.value); //
+            words.push(document.story.adjective1.value);//
+            words.push(document.story.adjective2.value);//
+            words.push(document.story.adjective3.value);//
+            words.push(document.story.adverb.value);//
+            words.push(document.story.noun1.value);//
+            words.push(document.story.noun2.value);//
+            words.push(document.story.pnoun1.value);//
+            words.push(document.story.pnoun2.value);//
+            words.push(document.story.pnoun3.value);//
+            words.push(document.story.pnoun4.value);//
+            words.push(document.story.pnoun5.value);//
+            //alert (words);
+            return "India is a very " + words[1] + " country located almost directly across the world from the United "
+            + words[7] + " of America. India is bounded on the north by " + words[0] + " and on the south by the " + words[2] +
+                " Ocean. Indian women are very beautiful and wear a lot of large " + words[8] + " on their arms and often wear large strings of "
+            + words[9] + " around their necks. They have many religious sects, including Hindus, Brahmin, Muslims, and " + words[10] +
+                ". Many indians regard the cow as a sacred " + words[5] + ", and cows are allowed to wander " + words[4] + " about the streets. One Indian caste" +
+                "is called the Untouchables. The " + words[3] + " Untouchables sit in the city " + words[6] + " and beg tourists to give them " + words[11] + "."
+        }
+    </script>
+</head>
+<body>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="social.html">Social</a>
+    <a href="about.html">About</a>
+    <a href="miniprojects.html">MiniProjects</a>
+    <a href="calculator.html">Calculator</a>
+    <a class="active" href="madLib.html">Mad-Lib</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="canvasHW.html">Canvas</a>
+</div>
+<form name="story">
+    <br><br>
+    A Place:<input name="place">
+    <br><br>
+    Adjective #1:<input name="adjective1">
+    <br><br>
+    Adjective #2:<input name="adjective2">
+    <br><br>
+    Adjective #3:<input name="adjective3">
+    <br><br>
+    Adverb:<input name="adverb">
+    <br><br>
+    Noun #1:<input name="noun1">
+    <br><br>
+    Noun #2:<input name="noun2">
+    <br><br>
+    Plural Noun #1:<input name="pnoun1">
+    <br><br>
+    Plural Noun #2:<input name="pnoun2">
+    <br><br>
+    Plural Noun #3:<input name="pnoun3">
+    <br><br>
+    Plural Noun #4:<input name="pnoun4">
+    <br><br>
+    Plural Noun #5:<input name="pnoun5">
+    <br><br>
+    <button type="button" onclick="document.story.result.value=tellStory()">Story</button>
+    <br><br>
+    <output name="result"></output>
+</form>
+
+</body>
+</html>
